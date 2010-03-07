@@ -3,7 +3,9 @@ package fragsoft.controllers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import fragsoft.annotations.ManagedBean;
 
+@ManagedBean
 public class UserManager {
 	
 	private static final Logger LOG = LoggerFactory.getLogger(UserManager.class);
