@@ -1,0 +1,14 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:frs="http://fragsoft"
+	xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:a4j="http://richfaces.org/a4j" xmlns:rich="http://richfaces.org/rich" 
+	xmlns:ui="http://java.sun.com/jsf/facelets" template="/WEB-INF/templates/template.xhtml">
+	
+	<ui:define name="main">
+		<frs:hello name="#{user.name}" /> 
+		<h:form>
+			<a4j:commandButton value="Home" action="#{user.home}" />
+		</h:form>
+	</ui:define>
+
+</ui:composition>
