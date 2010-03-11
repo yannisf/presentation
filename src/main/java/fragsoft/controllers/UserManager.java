@@ -24,6 +24,7 @@ public class UserManager {
 	
 	public String register() {
 		LOG.info("register");
+//		throw new RuntimeException("No reason");
 		return "greet";
 	}
 
@@ -33,3 +34,4 @@ public class UserManager {
 	}
 	
 }
+
