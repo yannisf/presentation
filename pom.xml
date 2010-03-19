@@ -7,6 +7,12 @@
 	<version>0.0.1</version>
 	<name>Presentation layer module (JSF/Richfaces/Facelets)</name>
 
+	<scm>
+		<connection>scm:git:http://github.com/yannisf/presentation.git</connection>
+		<url>http://github.com/yannisf/presentation</url>
+	</scm>
+
+
 	<build>
 		<finalName>presentation</finalName>
 		<plugins>
