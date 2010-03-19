@@ -19,7 +19,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Application Lifecycle Listener implementation class ServletEventsListener
+ * Generic servlet event listener.
  * 
  */
 public class ServletEventsListener implements ServletContextListener,

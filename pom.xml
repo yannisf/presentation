@@ -126,4 +126,17 @@
 			<version>1.6.7</version>
 		</dependency>
 	</dependencies>
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.6.1</version>
+				<configuration>
+					<encoding>utf8</encoding>
+					<docencoding>utf8</docencoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</reporting>
 </project>

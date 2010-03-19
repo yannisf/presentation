@@ -5,6 +5,9 @@ import org.slf4j.LoggerFactory;
 
 import fragsoft.annotations.ManagedBean;
 
+/**
+ * Domain entity User controller
+ */
 @ManagedBean
 public class UserManager {
 	
