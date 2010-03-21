@@ -11,12 +11,12 @@ public class ManagedBeanInterceptor {
 	
 	private static final Logger LOG = LoggerFactory.getLogger(ManagedBeanInterceptor.class);
 	
-	  @Pointcut("execution(* fragsoft.controllers.UserManager.register())" )
+	  @Pointcut("execution(String fragsoft.controllers.UserController.*())" )
 	  void action() {}
 	  
 	  @Before("action()") 
 	  public void beforeAction() {
-		  LOG.info("Caught action in aspect");
+		  LOG.info("Caught action in aspect. ");
 	  }
 
 	
