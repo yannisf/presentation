@@ -43,4 +43,24 @@ public class UserControllerTest {
 		Assert.assertFalse(controller.isGroupformRender());
 	}
 
+	@Test
+	public void testGroupInitialize() {
+		LOG.info("Initializing Group");
+		controller.initializeGroup();
+		Assert.assertTrue(controller.isGroupformRender());
+		Assert.assertFalse(controller.isUserformRender());
+		Assert.assertNotNull(controller.getGroup());
+	}
+	
+	@Test(dependsOnMethods={"testGroupInitialize"})
+	public void testAddGroup() {
+		LOG.info("Adding Group");
+		controller.getGroup().setName("test group");
+		controller.addGroup();
+		Assert.assertFalse(controller.getGroups().isEmpty());
+		Assert.assertNull(controller.getGroup());
+		Assert.assertFalse(controller.isUserformRender());
+		Assert.assertFalse(controller.isGroupformRender());
+	}
+	
 }
