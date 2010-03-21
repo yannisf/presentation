@@ -150,6 +150,11 @@
 					<docencoding>utf8</docencoding>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>cobertura-maven-plugin</artifactId>
+				<version>2.3</version>
+			</plugin>
 		</plugins>
 	</reporting>
 </project>
