@@ -1,0 +1,34 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:a4j="http://richfaces.org/a4j" xmlns:rich="http://richfaces.org/rich" 
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+	
+	<h:panelGrid columns="2">
+		<a4j:commandButton value="Add Group" action="#{UserController.initializeGroup}" styleClass="actionbutton" reRender="groupformfields"/>
+	</h:panelGrid>
+	
+	<h:panelGroup id="groupformfields">
+		<h:panelGrid columns="4" id="groupform" rendered="#{UserController.groupformRender}">
+			<h:outputText value="Group name: "/>
+			<h:inputText value="#{UserController.group.name}"/>
+			<h:commandButton value="#{m.add}" action="#{UserController.addGroup}" styleClass="actionbutton" />
+			<a4j:commandButton value="#{m.cancel}" action="#{UserController.cancelGroup}" styleClass="actionbutton" reRender="groupformfields"/>
+		</h:panelGrid>
+	</h:panelGroup>
+
+	<h:dataTable value="#{UserController.groups}" var="group" rendered="#{not empty UserController.groups}">
+		<h:column>
+			<f:facet name="header"> #{m.id} </f:facet>
+			#{group.id}
+		</h:column>
+		<h:column>
+			<f:facet name="header"> #{m.groupName} </f:facet>
+			#{group.name}
+		</h:column>
+		<h:column>
+			<f:facet name="header"> #{m.options} </f:facet>
+			Edit/Delete
+		</h:column>
+	</h:dataTable>
+
+</ui:composition>

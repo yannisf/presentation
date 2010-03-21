@@ -5,9 +5,9 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets" template="/WEB-INF/templates/template.xhtml">
 	
 	<ui:define name="main">
-		<h:form>
-			<h:inputText value="#{user.name}"/>
-			<a4j:commandButton value="Submit" action="#{user.register}"/>
+		<h:form prependId="false">
+			<ui:include src="userform.xhtml" />
+			<ui:include src="groupform.xhtml" />
 		</h:form>
 	</ui:define>
 
