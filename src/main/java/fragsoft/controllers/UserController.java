@@ -16,7 +16,7 @@ import fragsoft.domain.User;
  * Domain User/Group controller.
  */
 @ManagedBean
-public class UserManager {
+public class UserController {
 
 	public static final AtomicInteger userIdSequence = new AtomicInteger(0);
 	public static final AtomicInteger groupIdSequence = new AtomicInteger(0);
@@ -24,7 +24,7 @@ public class UserManager {
 	public static final String USER_ID_PREFIX = "U";
 	public static final String GROUP_ID_PREFIX = "G";
 	
-	private static final Logger LOG = LoggerFactory.getLogger(UserManager.class);
+	private static final Logger LOG = LoggerFactory.getLogger(UserController.class);
 
 	private static final Integer ID_PADDING_SIZE = 3;
 	private static final Character ID_PADDING_CHAR = '0';
