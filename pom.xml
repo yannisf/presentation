@@ -1,10 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
 	<groupId>fragsoft</groupId>
 	<artifactId>presentation</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1</version>
+
 	<name>Presentation layer module (JSF/Richfaces/Facelets)</name>
 
 	<scm>
@@ -50,25 +52,6 @@
 				<configuration>
 					<encoding>utf8</encoding>
 				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>cobertura-maven-plugin</artifactId>
-				<version>2.3</version>
-				<configuration>
-					<formats>
-						<format>xml</format>
-					</formats>
-				</configuration>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>cobertura</goal>
-						</goals>
-					</execution>
-				</executions>
-
 			</plugin>
 		</plugins>
 	</build>
@@ -158,6 +141,7 @@
 			<scope>compile</scope>
 		</dependency>
 	</dependencies>
+
 	<reporting>
 		<plugins>
 			<plugin>
@@ -173,7 +157,13 @@
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>cobertura-maven-plugin</artifactId>
 				<version>2.3</version>
+				<configuration>
+					<formats>
+						<format>xml</format>
+					</formats>
+				</configuration>
 			</plugin>
 		</plugins>
 	</reporting>
+	
 </project>
