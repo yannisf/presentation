@@ -16,7 +16,7 @@ public class ManagedBeanInterceptor {
 	  
 	  @Before("action()") 
 	  public void beforeAction() {
-		  LOG.info("Caught action in aspect. ");
+		  LOG.info("AspectJ interception. ");
 	  }
 
 	
