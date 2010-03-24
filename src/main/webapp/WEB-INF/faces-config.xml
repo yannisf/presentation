@@ -6,7 +6,7 @@
 		<description>User Controller</description>
 		<managed-bean-name>UserController</managed-bean-name>
 		<managed-bean-class>fragsoft.controllers.UserController</managed-bean-class>
-		<managed-bean-scope>session</managed-bean-scope>
+		<managed-bean-scope>request</managed-bean-scope>
 	</managed-bean>
 	<navigation-rule>
 		<navigation-case>

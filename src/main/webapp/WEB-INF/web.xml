@@ -7,7 +7,7 @@
 	<display-name>Presentation</display-name>
 	
 	<session-config>
-		<session-timeout>1</session-timeout>
+		<session-timeout>30</session-timeout>
 	</session-config>
 	
 	<context-param>
@@ -82,9 +82,6 @@
 	
 	<listener>
 		<listener-class>com.sun.faces.config.ConfigureListener</listener-class>
-	</listener>
-	<listener>
-		<listener-class>fragsoft.servlet.ServletEventsListener</listener-class>
 	</listener>
 	
 	<welcome-file-list>
