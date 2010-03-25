@@ -28,8 +28,8 @@ public class ServletEventsListener implements ServletContextListener,
 		HttpSessionBindingListener, ServletRequestListener,
 		ServletRequestAttributeListener {
 
-	
-	private static final Logger LOG = LoggerFactory.getLogger(ServletEventsListener.class);
+	private static final Logger LOG = LoggerFactory
+			.getLogger(ServletEventsListener.class);
 
 	/**
 	 * Default constructor.
@@ -98,7 +98,7 @@ public class ServletEventsListener implements ServletContextListener,
 	 * @see HttpSessionAttributeListener#attributeRemoved(HttpSessionBindingEvent)
 	 */
 	public void attributeRemoved(HttpSessionBindingEvent se) {
-		LOG.debug("Servlet Listener: attributeRemoved. ");
+		LOG.debug("Servlet Listener (binding event): attributeRemoved. ");
 	}
 
 	/**
@@ -133,21 +133,21 @@ public class ServletEventsListener implements ServletContextListener,
 	 * @see HttpSessionAttributeListener#attributeReplaced(HttpSessionBindingEvent)
 	 */
 	public void attributeReplaced(HttpSessionBindingEvent se) {
-		LOG.debug("Servlet Listener: attributeReplaced. ");
+		LOG.debug("Servlet Listener (binding event): attributeReplaced. ");
 	}
 
 	/**
 	 * @see ServletContextAttributeListener#attributeReplaced(ServletContextAttributeEvent)
 	 */
 	public void attributeReplaced(ServletContextAttributeEvent scab) {
-		LOG.debug("Servlet Listener: attributeReplaced. ");
+		LOG.debug("Servlet Listener (context): attributeReplaced. ");
 	}
 
 	/**
 	 * @see ServletRequestAttributeListener#attributeRemoved(ServletRequestAttributeEvent)
 	 */
 	public void attributeRemoved(ServletRequestAttributeEvent srae) {
-		LOG.debug("Servlet Listener: attributeReplaced. ");
+		LOG.debug("Servlet Listener: attributeRemoved. ");
 	}
 
 	/**
