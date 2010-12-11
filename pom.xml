@@ -17,7 +17,7 @@
 	</issueManagement>
 	<ciManagement>
 		<system>hudson</system>
-		<url>http://localhost:8080/hudson/job/presentation/</url>
+		<url>http://atlas/hudson/job/presentation/</url>
 	</ciManagement>
 	<inceptionYear>2009</inceptionYear>
 	<scm>
